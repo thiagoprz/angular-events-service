@@ -1,8 +1,11 @@
 {
-  "name": "events-service",
+  "name": "@thiagoprz/events-service",
   "version": "0.0.1",
   "description": "Angular Event Service",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  }
   "scripts": {
     "prepublish": "tsc"
   },
@@ -26,5 +29,6 @@
   "dependencies": {
     "@angular/core": "^11.2.3",
     "rxjs": "^6.6.6"
-  }
+  },
+  "devDependencies": {}
 }
