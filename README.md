@@ -1,0 +1,2 @@
+Angular Event Service
+===

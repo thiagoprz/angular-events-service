@@ -1,0 +1,30 @@
+{
+  "name": "events-service",
+  "version": "0.0.1",
+  "description": "Angular Event Service",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagoprz/angular-events-service.git"
+  },
+  "keywords": [
+    "events",
+    "angular",
+    "ionic",
+    "sevice",
+    "async"
+  ],
+  "author": "Thiago Przyczynski <przyczynski@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thiagoprz/angular-events-service/issues"
+  },
+  "homepage": "https://github.com/thiagoprz/angular-events-service",
+  "dependencies": {
+    "@angular/core": "^11.2.3",
+    "rxjs": "^6.6.6"
+  }
+}
