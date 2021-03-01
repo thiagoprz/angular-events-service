@@ -5,7 +5,7 @@
   "main": "index.js",
   "publishConfig": {
     "access": "public"
-  }
+  },
   "scripts": {
     "prepublish": "tsc"
   },
