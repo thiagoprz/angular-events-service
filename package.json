@@ -1,6 +1,6 @@
 {
   "name": "@thiagoprz/events-service",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Angular Event Service",
   "main": "index.js",
   "publishConfig": {
