@@ -6,13 +6,16 @@ import {Subject, Subscription} from 'rxjs';
 })
 export class EventsService {
 
+  /**
+   * Channels available to subscribe
+   * @private
+   */
   private channels: { [key: string]: Subject<any>; } = {};
 
   /**
    * Subscribe to a topic and provide a single handler/observer.
    * @param topic The name of the topic to subscribe to.
    * @param observer The observer or callback function to listen when changes are published.
-   *
    * @returns Subscription from which you can unsubscribe to release memory resources and to prevent memory leak.
    */
   subscribe(topic: string, observer: (_: any) => void): Subscription {
@@ -20,7 +23,6 @@ export class EventsService {
       // You can also use ReplaySubject with one concequence
       this.channels[topic] = new Subject<any>();
     }
-
     return this.channels[topic].subscribe(observer);
   }
 
@@ -35,7 +37,6 @@ export class EventsService {
       // Or you can create a new subject for future subscribers
       return;
     }
-
     subject.next(data);
   }
 
@@ -44,12 +45,11 @@ export class EventsService {
    * destroy the observable of the topic using this method.
    * @param topic The name of the topic to destroy.
    */
-  destroy(topic: string): null {
+  destroy(topic: string): void {
     const subject = this.channels[topic];
     if (!subject) {
       return;
     }
-
     subject.complete();
     delete this.channels[topic];
   }
