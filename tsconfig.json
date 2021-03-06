@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
     "noImplicitAny": true,
-    "module": "commonjs",
-    "target": "ES6",
+    "module": "es2020",
+    "moduleResolution": "node",
+    "target": "es2015",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,

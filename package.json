@@ -1,9 +1,9 @@
 {
   "name": "@thiagoprz/events-service",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "Angular Event Service",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/events-service.js",
+  "types": "dist/events-service.d.ts",
   "publishConfig": {
     "access": "public"
   },
