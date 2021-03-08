@@ -7,6 +7,11 @@ import {Subject, Subscription} from 'rxjs';
 export class EventsService {
 
   /**
+   * Constructor
+   */
+  constructor() {}
+
+  /**
    * Channels available to subscribe
    * @private
    */

@@ -1,6 +1,6 @@
 {
   "name": "@thiagoprz/events-service",
-  "version": "0.0.9",
+  "version": "0.0.12",
   "description": "Angular Event Service",
   "main": "dist/events-service.js",
   "types": "dist/events-service.d.ts",

@@ -6,10 +6,12 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
-    "declaration": true
+    "declaration": true,
+    "strict": true,
+    "outDir": "dist"
   },
   "files": [
-    "events-service.ts"
+    "./src/events.service.ts"
   ],
   "exclude": [
     "node_modules"
